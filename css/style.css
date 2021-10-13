@@ -325,7 +325,43 @@ body {
 
     h2 p {
         font-size: 18px;
+    }
+
+    .menu > li {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+    
+    .box-item {
+        padding: 45px 55px 24px 55px;
+    }
+
+    .box-text {
+        border-right: none;
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+    .box-item:last-child .box-text {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 34px;
+    }
+
+    .h2::before, .h2::after {
+        display: none;
     }
 }
